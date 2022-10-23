@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+body{
+	min-height: 100vh;
+	background: linear-gradient(135deg, rgba(0,128,170,1) 0%, rgba(179,182,255,1) 55%, rgba(255,152,199,1) 100%);
+	font-family: 'Poppins', sans-serif, serif;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.card-utama{
+	background-color: rgba(255, 255, 255, .5);
+	width: 350px;
+	padding: 2rem;
+	border-radius: 10px;
+	position: relative;
+}
+
+.card-utama::before{
+	content: '';
+	position: absolute;
+	background-color: rgba(255, 255, 255, .5);
+	inset: 0;
+	transform: rotate(5deg);
+	z-index: -1;
+}
+
+.konten{
+	text-align: center;
+}
+
+.konten img{
+	width: 10rem;
+	border-radius: 50%;
+}
+
+.konten h4{
+	padding-top: 20px;
+}
+
+@media (max-width: 760px){
+	body{
+		padding: 2rem 0;
+	}
+
+	.card-utama{
+		width: 250px;
+		padding: 2rem;
+	}
+}
