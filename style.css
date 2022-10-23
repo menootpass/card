@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body{
+	overflow: hidden;
+	min-height: 100vh;
+	background-image: url(backgr.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	font-family: 'Poppins', sans-serif, serif;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.card-utama{
+	background-color: rgba(255, 255, 255, .5);
+	width: 350px;
+	padding: 2rem;
+	position: relative;
+}
+
+.card-utama::before{
+	content: '';
+	position: absolute;
+	background-color: rgba(255, 255, 255, .5);
+	inset: 0;
+	transform: rotate(5deg);
+	z-index: -1;
+}
+
+.konten{
+	text-align: center;
+}
+
+.konten img{
+	width: 10rem;
+	border-radius: 50%;
+}
+
+.konten h4{
+	padding-top: 20px;
+}
+
